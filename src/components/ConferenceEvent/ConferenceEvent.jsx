@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./ConferenceEvent.css";
-import TotalCost from "./TotalCost";
+import TotalCost from "../TotalCost/TotalCost";
 import { useSelector, useDispatch } from "react-redux";
-import { incrementQuantity, decrementQuantity } from "./venueSlice";
+import { incrementQuantity, decrementQuantity } from "../../state_management/venueSlice";
 const ConferenceEvent = () => {
   const [showItems, setShowItems] = useState(false);
   const [numberOfPeople, setNumberOfPeople] = useState(1);

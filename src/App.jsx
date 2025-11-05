@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import ConferenceEvent from "./ConferenceEvent";
-import AboutUs from "./AboutUs";
+import ConferenceEvent from './components/ConferenceEvent/ConferenceEvent';
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
   const [showVenue, setShowVenue] = useState(false);

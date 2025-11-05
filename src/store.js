@@ -1,6 +1,5 @@
-// store.js
 import { configureStore } from '@reduxjs/toolkit';
-import venueReducer from './venueSlice';
+import venueReducer from './state_management/venueSlice';
 
 export default configureStore({
   reducer: {
