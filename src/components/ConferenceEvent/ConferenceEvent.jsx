@@ -50,12 +50,6 @@ const ConferenceEvent = () => {
     }
   };
 
-  const totalCosts = {
-    venue: venueTotalCost,
-    av: avTotalCost,
-    meals: mealsTotalCost,
-  };
-
   const getItemsFromTotalCost = () => {
     const items = [];
     venueItems.forEach((item) => {
@@ -136,6 +130,12 @@ const ConferenceEvent = () => {
   const venueTotalCost = calculateTotalCost("venue");
   const avTotalCost = calculateTotalCost('av');
   const mealsTotalCost = calculateTotalCost('meals');
+
+  const totalCosts = {
+    venue: venueTotalCost,
+    av: avTotalCost,
+    meals: mealsTotalCost,
+  };
 
   const navigateToProducts = (idType) => {
     if (idType == '#venue' || idType == '#addons' || idType == '#meals') {
